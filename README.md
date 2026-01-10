@@ -47,9 +47,11 @@ uv run python main.py
 ```bash
 python -m PyInstaller -F -w --name rename main.py
 ```
-打包产物位于 `dist/rename.exe`。
 
 ## 技术栈
 - Python (Tkinter GUI)
 - Windows Registry API (winreg)
 - Named Pipes & Mutex (IPC for Single Instance)
+
+## 问题
+右键方式的重命名，速度较慢
