@@ -1,0 +1,10 @@
+[project]
+name = "rename"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pyinstaller>=6.18.0",
+    "pywin32>=311",
+]

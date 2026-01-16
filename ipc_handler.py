@@ -88,7 +88,7 @@ class IPCHandler:
                 
                 win32file.CloseHandle(pipe)
             except Exception as e:
-                time.sleep(0.1)
+                time.sleep(0.05)
 
     def send_files_to_server(self, files, retries=10):
         """
@@ -111,8 +111,17 @@ class IPCHandler:
                 win32file.CloseHandle(handle)
                 return True
             except pywintypes.error as e:
-                if e.args[0] == 2: # File not found (Pipe not ready yet)
-                    time.sleep(0.2)
+                # 2 = ERROR_FILE_NOT_FOUND (Server not started yet)
+                # 231 = ERROR_PIPE_BUSY (Server busy)
+                if e.args[0] == 2 or e.args[0] == 231: 
+                    if e.args[0] == 231:
+                         # Pipe busy, wait briefly
+                         try:
+                             win32pipe.WaitNamedPipe(PIPE_NAME, 50)
+                         except:
+                             pass
+                    else:
+                         time.sleep(0.01)
                     continue
                 break
             except Exception:

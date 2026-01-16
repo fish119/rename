@@ -1,11 +1,7 @@
-
 import sys
 import os
 import time
 import threading
-import tkinter as tk
-from tkinter import filedialog, messagebox
-import tkinter.messagebox
 
 try:
     from renamer import Renamer
@@ -16,6 +12,12 @@ except ImportError:
 
 class RenameApp:
     def __init__(self, root, ipc_handler):
+        import tkinter as tk
+        from tkinter import filedialog, messagebox
+        self.tk = tk
+        self.filedialog = filedialog
+        self.messagebox = messagebox
+        
         self.root = root
         self.root.title("Rename Utility")
         self.root.geometry("600x400")
@@ -32,6 +34,7 @@ class RenameApp:
         self.setup_ui()
 
     def setup_ui(self):
+        import tkinter as tk
         btn_frame = tk.Frame(self.root)
         btn_frame.pack(fill=tk.X, padx=10, pady=5)
         
@@ -52,13 +55,15 @@ class RenameApp:
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
         self.listbox.config(yscrollcommand=scrollbar.set)
         
+        import tkinter as tk
         self.status = tk.StringVar()
         self.status.set("就绪")
         tk.Label(self.root, textvariable=self.status, anchor=tk.W).pack(fill=tk.X, padx=10, pady=2)
 
     def add_files(self):
-        files = filedialog.askopenfilenames()
+        files = self.filedialog.askopenfilenames()
         if files:
+            import tkinter as tk
             for f in files:
                 if f not in self.file_list:
                     self.file_list.append(f)
@@ -66,13 +71,14 @@ class RenameApp:
             self.status.set(f"已添加 {len(files)} 个文件")
 
     def clear_list(self):
+        import tkinter as tk
         self.file_list = []
         self.listbox.delete(0, tk.END)
         self.status.set("列表已清空")
 
     def start_rename(self):
         if not self.file_list:
-            tkinter.messagebox.showwarning("提示", "请先添加文件")
+            self.messagebox.showwarning("提示", "请先添加文件")
             return
             
         self.status.set("正在重命名...")
@@ -82,26 +88,27 @@ class RenameApp:
             self.renamer.rename_files(self.file_list)
             self.status.set("重命名完成")
             self.file_list = []
+            import tkinter as tk
             self.listbox.delete(0, tk.END)
         except Exception as e:
             self.status.set(f"出错: {e}")
-            tkinter.messagebox.showerror("错误", str(e))
+            self.messagebox.showerror("错误", str(e))
 
     def add_context_menu(self):
         if self.registry_manager.add_context_menu():
             self.status.set("已添加到右键菜单")
-            tkinter.messagebox.showinfo("成功", "已添加到右键菜单")
+            self.messagebox.showinfo("成功", "已添加到右键菜单")
         else:
             self.status.set("添加失败")
-            tkinter.messagebox.showerror("失败", "添加失败")
+            self.messagebox.showerror("失败", "添加失败")
 
     def remove_context_menu(self):
         if self.registry_manager.remove_context_menu():
             self.status.set("已从右键菜单移除")
-            tkinter.messagebox.showinfo("成功", "已移除")
+            self.messagebox.showinfo("成功", "已移除")
         else:
             self.status.set("移除失败")
-            tkinter.messagebox.showerror("失败", "移除失败")
+            self.messagebox.showerror("失败", "移除失败")
 
     def handle_ipc_files(self, files):
         if files:
@@ -125,14 +132,14 @@ def cli_timer_callback():
         except Exception:
             pass
     # 退出前释放 mutex (虽然 process exit 也会系统回收)
-    sys.exit(0)
+    os._exit(0)
 
 def reset_timer():
     global termination_timer
     if termination_timer:
         termination_timer.cancel()
-    # 增加超时时间到 1.5 秒，确保收集到所有文件
-    termination_timer = threading.Timer(1.5, cli_timer_callback)
+    # 减小超时时间到 0.05 秒
+    termination_timer = threading.Timer(0.05, cli_timer_callback)
     termination_timer.start()
 
 def cli_server_callback(files):
@@ -177,6 +184,7 @@ def main():
             pass
     else:
         # GUI Mode
+        import tkinter as tk
         root = tk.Tk()
         app = RenameApp(root, ipc)
         root.mainloop()
