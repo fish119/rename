@@ -1,0 +1,14 @@
+E:\Code\Antigravity\rename\rust-rename\target\release\deps\serde-83ba1d5a54746350.d: C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs E:\Code\Antigravity\rename\rust-rename\target\release\build\serde-31e54402bbac280f\out/private.rs
+
+E:\Code\Antigravity\rename\rust-rename\target\release\deps\libserde-83ba1d5a54746350.rlib: C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs E:\Code\Antigravity\rename\rust-rename\target\release\build\serde-31e54402bbac280f\out/private.rs
+
+E:\Code\Antigravity\rename\rust-rename\target\release\deps\libserde-83ba1d5a54746350.rmeta: C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs E:\Code\Antigravity\rename\rust-rename\target\release\build\serde-31e54402bbac280f\out/private.rs
+
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\lib.rs:
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\integer128.rs:
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\mod.rs:
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\de.rs:
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde-1.0.228\src\private\ser.rs:
+E:\Code\Antigravity\rename\rust-rename\target\release\build\serde-31e54402bbac280f\out/private.rs:
+
+# env-dep:OUT_DIR=E:\\Code\\Antigravity\\rename\\rust-rename\\target\\release\\build\\serde-31e54402bbac280f\\out

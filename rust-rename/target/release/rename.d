@@ -1,0 +1,1 @@
+E:\Code\Antigravity\rename\rust-rename\target\release\rename.exe: E:\Code\Antigravity\rename\rust-rename\src\gui.rs E:\Code\Antigravity\rename\rust-rename\src\ipc.rs E:\Code\Antigravity\rename\rust-rename\src\main.rs E:\Code\Antigravity\rename\rust-rename\src\registry.rs E:\Code\Antigravity\rename\rust-rename\src\renamer.rs

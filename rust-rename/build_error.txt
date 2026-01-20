@@ -1,0 +1,426 @@
+   Compiling proc-macro2 v1.0.105
+   Compiling unicode-ident v1.0.22
+   Compiling quote v1.0.43
+   Compiling windows_x86_64_msvc v0.52.6
+    Checking stable_deref_trait v1.2.1
+    Checking cfg-if v1.0.4
+   Compiling autocfg v1.5.0
+   Compiling cfg_aliases v0.2.1
+    Checking smallvec v1.15.1
+   Compiling khronos_api v3.1.0
+    Checking bitflags v2.10.0
+    Checking writeable v0.6.2
+   Compiling xml-rs v0.8.28
+   Compiling log v0.4.29
+    Checking litemap v0.8.1
+    Checking windows-link v0.2.1
+   Compiling icu_properties_data v2.1.2
+   Compiling icu_normalizer_data v2.1.1
+   Compiling zerocopy v0.8.33
+    Checking once_cell v1.21.3
+    Checking simd-adler32 v0.3.8
+   Compiling version_check v0.9.5
+   Compiling parking_lot_core v0.9.12
+   Compiling crc32fast v1.5.0
+    Checking windows-link v0.1.3
+   Compiling windows_x86_64_msvc v0.53.1
+    Checking accesskit v0.17.1
+    Checking raw-window-handle v0.6.2
+    Checking ttf-parser v0.25.1
+    Checking windows-targets v0.52.6
+    Checking adler2 v2.0.1
+   Compiling num-traits v0.2.19
+    Checking scopeguard v1.2.0
+   Compiling ahash v0.8.12
+    Checking windows-result v0.2.0
+    Checking windows-sys v0.52.0
+    Checking miniz_oxide v0.8.9
+   Compiling winit v0.30.12
+    Checking arrayvec v0.7.6
+   Compiling gl_generator v0.14.0
+    Checking lock_api v0.4.14
+    Checking pin-project-lite v0.2.16
+    Checking windows-strings v0.1.0
+    Checking tracing-core v0.1.36
+    Checking ab_glyph_rasterizer v0.1.10
+   Compiling paste v1.0.15
+    Checking foldhash v0.1.5
+    Checking parking_lot v0.12.5
+    Checking immutable-chunkmap v2.1.2
+    Checking windows-strings v0.4.2
+    Checking windows-result v0.3.4
+    Checking flate2 v1.1.8
+    Checking hashbrown v0.15.5
+    Checking tracing v0.1.44
+    Checking fdeflate v0.3.7
+    Checking cursor-icon v1.2.0
+    Checking utf8_iter v1.0.4
+    Checking epaint_default_fonts v0.31.1
+   Compiling syn v2.0.114
+    Checking smol_str v0.2.2
+    Checking percent-encoding v2.3.2
+    Checking dpi v0.1.2
+    Checking nohash-hasher v0.2.0
+    Checking profiling v1.0.17
+   Compiling glutin_wgl_sys v0.6.1
+   Compiling glutin_egl_sys v0.7.1
+    Checking unicode-segmentation v1.12.0
+    Checking windows-targets v0.53.5
+    Checking form_urlencoded v1.2.2
+   Compiling memoffset v0.9.1
+    Checking png v0.18.0
+   Compiling glutin v0.32.3
+    Checking static_assertions v1.1.0
+    Checking byteorder-lite v0.1.0
+    Checking accesskit_consumer v0.26.0
+   Compiling serde_core v1.0.228
+    Checking error-code v3.3.2
+    Checking pxfm v0.1.27
+    Checking clipboard-win v5.4.1
+    Checking windows-sys v0.60.2
+    Checking libloading v0.8.9
+   Compiling glutin-winit v0.5.0
+   Compiling serde v1.0.228
+   Compiling getrandom v0.3.4
+   Compiling winapi v0.3.9
+    Checking windows-sys v0.59.0
+    Checking windows-threading v0.1.0
+    Checking web-time v1.1.0
+    Checking glow v0.16.0
+    Checking owned_ttf_parser v0.25.1
+   Compiling litrs v1.0.0
+   Compiling rfd v0.15.4
+    Checking ab_glyph v0.2.32
+    Checking uuid v1.19.0
+   Compiling document-features v0.2.12
+    Checking moxcms v0.7.11
+   Compiling synstructure v0.13.2
+   Compiling zerofrom-derive v0.1.6
+   Compiling yoke-derive v0.8.1
+   Compiling zerovec-derive v0.11.2
+   Compiling displaydoc v0.2.5
+   Compiling bytemuck_derive v1.10.2
+   Compiling windows-interface v0.58.0
+   Compiling windows-implement v0.58.0
+   Compiling windows-implement v0.60.2
+   Compiling windows-interface v0.59.3
+   Compiling serde_derive v1.0.228
+    Checking windows-core v0.58.0
+    Checking windows-core v0.61.2
+    Checking zerofrom v0.1.6
+    Checking bytemuck v1.24.0
+    Checking yoke v0.8.1
+    Checking windows-future v0.2.1
+    Checking windows-collections v0.2.0
+    Checking windows-numerics v0.2.0
+    Checking windows v0.58.0
+    Checking emath v0.31.1
+    Checking zerovec v0.11.5
+    Checking zerotrie v0.2.3
+    Checking windows v0.61.3
+    Checking ecolor v0.31.1
+    Checking epaint v0.31.1
+    Checking image v0.25.9
+    Checking tinystr v0.8.2
+    Checking potential_utf v0.1.4
+    Checking icu_collections v2.1.1
+    Checking icu_locale_core v2.1.1
+    Checking egui v0.31.1
+    Checking icu_provider v2.1.1
+    Checking bincode v1.3.3
+    Checking icu_properties v2.1.2
+    Checking icu_normalizer v2.1.1
+    Checking arboard v3.6.1
+    Checking idna_adapter v1.2.1
+    Checking idna v1.1.0
+    Checking url v2.5.8
+    Checking webbrowser v1.0.6
+    Checking egui_glow v0.31.1
+    Checking accesskit_windows v0.24.1
+    Checking accesskit_winit v0.23.1
+    Checking egui-winit v0.31.1
+    Checking eframe v0.31.1
+    Checking rename v1.0.0 (E:\Code\Antigravity\rename\rust-rename)
+error[E0432]: unresolved imports `windows::Win32::Storage::FileSystem::ReadFile`, `windows::Win32::Storage::FileSystem::WriteFile`
+    --> src\ipc.rs:21:18
+     |
+  21 |     CreateFileW, ReadFile, WriteFile, FILE_ATTRIBUTE_NORMAL,
+     |                  ^^^^^^^^  ^^^^^^^^^ no `WriteFile` in `Win32::Storage::FileSystem`
+     |                  |
+     |                  no `ReadFile` in `Win32::Storage::FileSystem`
+     |
+note: found an item that was configured out
+    --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\Storage\FileSystem\mod.rs:2114:15
+     |
+2112 | #[cfg(feature = "Win32_System_IO")]
+     |       --------------------------- the item is gated behind the `Win32_System_IO` feature
+2113 | #[inline]
+2114 | pub unsafe fn ReadFile(hfile: super::super::Foundation::HANDLE, lpbuffer: Option<&mut [u8]>, lpnumberofbytesread: Option<*mut u32>, lpove...
+     |               ^^^^^^^^
+note: found an item that was configured out
+    --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\Storage\FileSystem\mod.rs:2872:15
+     |
+2870 | #[cfg(feature = "Win32_System_IO")]
+     |       --------------------------- the item is gated behind the `Win32_System_IO` feature
+2871 | #[inline]
+2872 | pub unsafe fn WriteFile(hfile: super::super::Foundation::HANDLE, lpbuffer: Option<&[u8]>, lpnumberofbyteswritten: Option<*mut u32>, lpove...
+     |               ^^^^^^^^^
+
+error[E0432]: unresolved imports `windows::Win32::System::Pipes::ConnectNamedPipe`, `windows::Win32::System::Pipes::PIPE_ACCESS_DUPLEX`
+  --> src\ipc.rs:25:5
+   |
+25 |     ConnectNamedPipe, CreateNamedPipeW, WaitNamedPipeW,
+   |     ^^^^^^^^^^^^^^^^
+   |     |
+   |     no `ConnectNamedPipe` in `Win32::System::Pipes`
+   |     help: a similar name exists in the module: `DisconnectNamedPipe`
+26 |     PIPE_ACCESS_DUPLEX, PIPE_READMODE_MESSAGE, PIPE_TYPE_MESSAGE,
+   |     ^^^^^^^^^^^^^^^^^^ no `PIPE_ACCESS_DUPLEX` in `Win32::System::Pipes`
+   |
+note: found an item that was configured out
+  --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Pipes\mod.rs:19:15
+   |
+17 | #[cfg(feature = "Win32_System_IO")]
+   |       --------------------------- the item is gated behind the `Win32_System_IO` feature
+18 | #[inline]
+19 | pub unsafe fn ConnectNamedPipe(hnamedpipe: super::super::Foundation::HANDLE, lpoverlapped: Option<*mut super::IO::OVERLAPPED>) -> windows...
+   |               ^^^^^^^^^^^^^^^^
+
+warning: unused import: `ERROR_ALREADY_EXISTS`
+  --> src\ipc.rs:16:55
+   |
+16 |     CloseHandle, GetLastError, HANDLE, WAIT_OBJECT_0, ERROR_ALREADY_EXISTS,
+   |                                                       ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `windows::Win32::Security::SECURITY_ATTRIBUTES`
+  --> src\ipc.rs:19:5
+   |
+19 | use windows::Win32::Security::SECURITY_ATTRIBUTES;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `INFINITE`
+  --> src\ipc.rs:30:54
+   |
+30 |     CreateMutexW, ReleaseMutex, WaitForSingleObject, INFINITE,
+   |                                                      ^^^^^^^^
+
+warning: unused import: `std::thread`
+  --> src\main.rs:21:5
+   |
+21 | use std::thread;
+   |     ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+   --> src\ipc.rs:208:17
+    |
+207 |             let pipe = match pipe {
+    |                              ---- this expression has type `HANDLE`
+208 |                 Ok(p) => p,
+    |                 ^^^^^ expected `HANDLE`, found `Result<_, _>`
+    |
+    = note: expected struct `HANDLE`
+                 found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+   --> src\ipc.rs:209:17
+    |
+207 |             let pipe = match pipe {
+    |                              ---- this expression has type `HANDLE`
+208 |                 Ok(p) => p,
+209 |                 Err(_) => {
+    |                 ^^^^^^ expected `HANDLE`, found `Result<_, _>`
+    |
+    = note: expected struct `HANDLE`
+                 found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> src\registry.rs:50:22
+   |
+50 |                 Some(&mut disposition),
+   |                 ---- ^^^^^^^^^^^^^^^^ expected `*mut REG_CREATE_KEY_DISPOSITION`, found `&mut u32`
+   |                 |
+   |                 arguments to this enum variant are incorrect
+   |
+   = note:    expected raw pointer `*mut REG_CREATE_KEY_DISPOSITION`
+           found mutable reference `&mut u32`
+help: the type constructed contains `&mut u32` due to the type of the argument passed
+  --> src\registry.rs:50:17
+   |
+50 |                 Some(&mut disposition),
+   |                 ^^^^^----------------^
+   |                      |
+   |                      this argument influences the type of `Some`
+note: tuple variant defined here
+  --> /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234\library\core\src\option.rs:607:5
+
+error[E0308]: mismatched types
+  --> src\registry.rs:44:17
+   |
+41 |             let result = RegCreateKeyExW(
+   |                          --------------- arguments to this function are incorrect
+...
+44 |                 0,
+   |                 ^ expected `Option<u32>`, found integer
+   |
+   = note: expected enum `Option<u32>`
+              found type `{integer}`
+note: function defined here
+  --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Registry\mod.rs:84:15
+   |
+84 | pub unsafe fn RegCreateKeyExW<P1, P3>(hkey: HKEY, lpsubkey: P1, reserved: Option<u32>, lpclass: P3, dwoptions: REG_OPEN_CREATE_OPTIONS, s...
+   |               ^^^^^^^^^^^^^^^
+help: try wrapping the expression in `Some`
+   |
+44 |                 Some(0),
+   |                 +++++ +
+
+error[E0599]: no method named `as_wide` found for struct `HSTRING` in the current scope
+  --> src\registry.rs:60:18
+   |
+59 |               let display_bytes: Vec<u8> = display_name
+   |  __________________________________________-
+60 | |                 .as_wide()
+   | |                 -^^^^^^^ method not found in `HSTRING`
+   | |_________________|
+   |
+
+error[E0282]: type annotations needed for `&_`
+  --> src\registry.rs:62:28
+   |
+62 |                 .flat_map(|&w| w.to_le_bytes())
+   |                            ^^  - type must be known at this point
+   |
+help: consider giving this closure parameter an explicit type, where the placeholders `_` are specified
+   |
+62 |                 .flat_map(|&w: &_| w.to_le_bytes())
+   |                              ++++
+
+error[E0308]: mismatched types
+   --> src\registry.rs:69:17
+    |
+ 66 |             let _ = RegSetValueExW(
+    |                     -------------- arguments to this function are incorrect
+...
+ 69 |                 0,
+    |                 ^ expected `Option<u32>`, found integer
+    |
+    = note: expected enum `Option<u32>`
+               found type `{integer}`
+note: function defined here
+   --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Registry\mod.rs:626:15
+    |
+626 | pub unsafe fn RegSetValueExW<P1>(hkey: HKEY, lpvaluename: P1, reserved: Option<u32>, dwtype: REG_VALUE_TYPE, lpdata: Option<&[u8]>) -> su...
+    |               ^^^^^^^^^^^^^^
+help: try wrapping the expression in `Some`
+    |
+ 69 |                 Some(0),
+    |                 +++++ +
+
+error[E0308]: mismatched types
+  --> src\registry.rs:87:22
+   |
+87 |                 Some(&mut disposition),
+   |                 ---- ^^^^^^^^^^^^^^^^ expected `*mut REG_CREATE_KEY_DISPOSITION`, found `&mut u32`
+   |                 |
+   |                 arguments to this enum variant are incorrect
+   |
+   = note:    expected raw pointer `*mut REG_CREATE_KEY_DISPOSITION`
+           found mutable reference `&mut u32`
+help: the type constructed contains `&mut u32` due to the type of the argument passed
+  --> src\registry.rs:87:17
+   |
+87 |                 Some(&mut disposition),
+   |                 ^^^^^----------------^
+   |                      |
+   |                      this argument influences the type of `Some`
+note: tuple variant defined here
+  --> /rustc/ded5c06cf21d2b93bffd5d884aa6e96934ee4234\library\core\src\option.rs:607:5
+
+error[E0308]: mismatched types
+  --> src\registry.rs:81:17
+   |
+78 |             let result = RegCreateKeyExW(
+   |                          --------------- arguments to this function are incorrect
+...
+81 |                 0,
+   |                 ^ expected `Option<u32>`, found integer
+   |
+   = note: expected enum `Option<u32>`
+              found type `{integer}`
+note: function defined here
+  --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Registry\mod.rs:84:15
+   |
+84 | pub unsafe fn RegCreateKeyExW<P1, P3>(hkey: HKEY, lpsubkey: P1, reserved: Option<u32>, lpclass: P3, dwoptions: REG_OPEN_CREATE_OPTIONS, s...
+   |               ^^^^^^^^^^^^^^^
+help: try wrapping the expression in `Some`
+   |
+81 |                 Some(0),
+   |                 +++++ +
+
+error[E0599]: no method named `as_wide` found for struct `HSTRING` in the current scope
+  --> src\registry.rs:98:18
+   |
+97 |               let command_bytes: Vec<u8> = command_hstring
+   |  __________________________________________-
+98 | |                 .as_wide()
+   | |                 -^^^^^^^ method not found in `HSTRING`
+   | |_________________|
+   |
+
+error[E0282]: type annotations needed for `&_`
+   --> src\registry.rs:100:28
+    |
+100 |                 .flat_map(|&w| w.to_le_bytes())
+    |                            ^^  - type must be known at this point
+    |
+help: consider giving this closure parameter an explicit type, where the placeholders `_` are specified
+    |
+100 |                 .flat_map(|&w: &_| w.to_le_bytes())
+    |                              ++++
+
+error[E0308]: mismatched types
+   --> src\registry.rs:107:17
+    |
+104 |             let _ = RegSetValueExW(
+    |                     -------------- arguments to this function are incorrect
+...
+107 |                 0,
+    |                 ^ expected `Option<u32>`, found integer
+    |
+    = note: expected enum `Option<u32>`
+               found type `{integer}`
+note: function defined here
+   --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Registry\mod.rs:626:15
+    |
+626 | pub unsafe fn RegSetValueExW<P1>(hkey: HKEY, lpvaluename: P1, reserved: Option<u32>, dwtype: REG_VALUE_TYPE, lpdata: Option<&[u8]>) -> su...
+    |               ^^^^^^^^^^^^^^
+help: try wrapping the expression in `Some`
+    |
+107 |                 Some(0),
+    |                 +++++ +
+
+error[E0308]: mismatched types
+   --> src\registry.rs:127:44
+    |
+127 |             if result.is_ok() || result == Err(windows::core::Error::from_win32()) {
+    |                                  ------    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `WIN32_ERROR`, found `Result<_, Error>`
+    |                                  |
+    |                                  expected because this is `WIN32_ERROR`
+    |
+    = note: expected struct `WIN32_ERROR`
+                 found enum `Result<_, windows_result::error::Error>`
+
+warning: unused variable: `last_error`
+  --> src\ipc.rs:79:25
+   |
+79 |                     let last_error = GetLastError();
+   |                         ^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_last_error`
+   |
+   = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+
+Some errors have detailed explanations: E0282, E0308, E0432, E0599.
+For more information about an error, try `rustc --explain E0282`.
+warning: `rename` (bin "rename") generated 5 warnings
+error: could not compile `rename` (bin "rename") due to 15 previous errors; 5 warnings emitted

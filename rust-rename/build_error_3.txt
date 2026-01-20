@@ -1,0 +1,66 @@
+    Checking rename v1.0.0 (E:\Code\Antigravity\rename\rust-rename)
+warning: unused import: `INVALID_HANDLE_VALUE`
+  --> src\ipc.rs:12:5
+   |
+12 |     INVALID_HANDLE_VALUE,
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::ptr`
+  --> src\registry.rs:10:5
+   |
+10 | use std::ptr;
+   |     ^^^^^^^^
+
+warning: unused import: `std::thread`
+  --> src\main.rs:21:5
+   |
+21 | use std::thread;
+   |     ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+   --> src\ipc.rs:191:17
+    |
+189 |             let pipe_result = CreateNamedPipeW(
+    |                               ---------------- arguments to this function are incorrect
+190 |                 PCWSTR(pipe_name.as_ptr()),
+191 |                 PIPE_ACCESS_DUPLEX, // u32
+    |                 ^^^^^^^^^^^^^^^^^^ expected `FILE_FLAGS_AND_ATTRIBUTES`, found `u32`
+    |
+note: function defined here
+   --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Pipes\mod.rs:35:15
+    |
+ 35 | pub unsafe fn CreateNamedPipeW<P0>(lpname: P0, dwopenmode: super::super::Storage::FileSystem::FILE_FLAGS_AND_ATTRIBUTES, dwpipemode: NAME...
+    |               ^^^^^^^^^^^^^^^^
+help: try wrapping the expression in `windows::Win32::Storage::FileSystem::FILE_FLAGS_AND_ATTRIBUTES`
+    |
+191 |                 windows::Win32::Storage::FileSystem::FILE_FLAGS_AND_ATTRIBUTES(PIPE_ACCESS_DUPLEX), // u32
+    |                 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++                  +
+
+error[E0308]: mismatched types
+   --> src\ipc.rs:205:17
+    |
+204 |             let pipe = match pipe_result {
+    |                              ----------- this expression has type `HANDLE`
+205 |                 Ok(p) => p,
+    |                 ^^^^^ expected `HANDLE`, found `Result<_, _>`
+    |
+    = note: expected struct `HANDLE`
+                 found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+   --> src\ipc.rs:206:17
+    |
+204 |             let pipe = match pipe_result {
+    |                              ----------- this expression has type `HANDLE`
+205 |                 Ok(p) => p,
+206 |                 Err(_) => {
+    |                 ^^^^^^ expected `HANDLE`, found `Result<_, _>`
+    |
+    = note: expected struct `HANDLE`
+                 found enum `Result<_, _>`
+
+For more information about this error, try `rustc --explain E0308`.
+warning: `rename` (bin "rename") generated 3 warnings
+error: could not compile `rename` (bin "rename") due to 3 previous errors; 3 warnings emitted

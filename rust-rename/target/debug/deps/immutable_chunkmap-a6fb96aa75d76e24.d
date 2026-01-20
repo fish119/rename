@@ -1,0 +1,9 @@
+E:\Code\Antigravity\rename\rust-rename\target\debug\deps\immutable_chunkmap-a6fb96aa75d76e24.d: C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\lib.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\avl.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\chunk.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\map.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\set.rs
+
+E:\Code\Antigravity\rename\rust-rename\target\debug\deps\libimmutable_chunkmap-a6fb96aa75d76e24.rmeta: C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\lib.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\avl.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\chunk.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\map.rs C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\set.rs
+
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\lib.rs:
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\avl.rs:
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\chunk.rs:
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\map.rs:
+C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\immutable-chunkmap-2.1.2\src\set.rs:

@@ -1,0 +1,154 @@
+    Checking windows v0.61.3
+    Checking rename v1.0.0 (E:\Code\Antigravity\rename\rust-rename)
+error[E0432]: unresolved import `windows::Win32::System::Pipes::PIPE_ACCESS_DUPLEX`
+  --> src\ipc.rs:20:5
+   |
+20 |     PIPE_ACCESS_DUPLEX, PIPE_READMODE_MESSAGE, PIPE_TYPE_MESSAGE,
+   |     ^^^^^^^^^^^^^^^^^^ no `PIPE_ACCESS_DUPLEX` in `Win32::System::Pipes`
+
+warning: unused import: `HSTRING`
+ --> src\ipc.rs:9:29
+  |
+9 | use windows::core::{PCWSTR, HSTRING};
+  |                             ^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `std::ptr`
+  --> src\registry.rs:10:5
+   |
+10 | use std::ptr;
+   |     ^^^^^^^^
+
+warning: unused import: `std::thread`
+  --> src\main.rs:21:5
+   |
+21 | use std::thread;
+   |     ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+   --> src\ipc.rs:119:21
+    |
+117 |                 let handle = CreateFileW(
+    |                              ----------- arguments to this function are incorrect
+118 |                     PCWSTR(pipe_name.as_ptr()),
+119 |                     FILE_GENERIC_READ | FILE_GENERIC_WRITE, // Access rights
+    |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ expected `u32`, found `FILE_ACCESS_RIGHTS`
+    |
+note: function defined here
+   --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\Storage\FileSystem\mod.rs:361:15
+    |
+361 | pub unsafe fn CreateFileW<P0>(lpfilename: P0, dwdesiredaccess: u32, dwsharemode: FILE_SHARE_MODE, lpsecurityattributes: Option<*const sup...
+    |               ^^^^^^^^^^^
+
+error[E0308]: mismatched types
+   --> src\ipc.rs:185:17
+    |
+184 |             let pipe = match pipe_result {
+    |                              ----------- this expression has type `HANDLE`
+185 |                 Ok(p) => p,
+    |                 ^^^^^ expected `HANDLE`, found `Result<_, _>`
+    |
+    = note: expected struct `HANDLE`
+                 found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+   --> src\ipc.rs:186:17
+    |
+184 |             let pipe = match pipe_result {
+    |                              ----------- this expression has type `HANDLE`
+185 |                 Ok(p) => p,
+186 |                 Err(_) => {
+    |                 ^^^^^^ expected `HANDLE`, found `Result<_, _>`
+    |
+    = note: expected struct `HANDLE`
+                 found enum `Result<_, _>`
+
+error[E0308]: mismatched types
+  --> src\registry.rs:51:17
+   |
+48 |             let result = RegCreateKeyExW(
+   |                          --------------- arguments to this function are incorrect
+...
+51 |                 0,
+   |                 ^ expected `Option<u32>`, found integer
+   |
+   = note: expected enum `Option<u32>`
+              found type `{integer}`
+note: function defined here
+  --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Registry\mod.rs:84:15
+   |
+84 | pub unsafe fn RegCreateKeyExW<P1, P3>(hkey: HKEY, lpsubkey: P1, reserved: Option<u32>, lpclass: P3, dwoptions: REG_OPEN_CREATE_OPTIONS, s...
+   |               ^^^^^^^^^^^^^^^
+help: try wrapping the expression in `Some`
+   |
+51 |                 Some(0),
+   |                 +++++ +
+
+error[E0308]: mismatched types
+   --> src\registry.rs:74:17
+    |
+ 71 |             let _ = RegSetValueExW(
+    |                     -------------- arguments to this function are incorrect
+...
+ 74 |                 0,
+    |                 ^ expected `Option<u32>`, found integer
+    |
+    = note: expected enum `Option<u32>`
+               found type `{integer}`
+note: function defined here
+   --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Registry\mod.rs:626:15
+    |
+626 | pub unsafe fn RegSetValueExW<P1>(hkey: HKEY, lpvaluename: P1, reserved: Option<u32>, dwtype: REG_VALUE_TYPE, lpdata: Option<&[u8]>) -> su...
+    |               ^^^^^^^^^^^^^^
+help: try wrapping the expression in `Some`
+    |
+ 74 |                 Some(0),
+    |                 +++++ +
+
+error[E0308]: mismatched types
+  --> src\registry.rs:86:17
+   |
+83 |             let result = RegCreateKeyExW(
+   |                          --------------- arguments to this function are incorrect
+...
+86 |                 0,
+   |                 ^ expected `Option<u32>`, found integer
+   |
+   = note: expected enum `Option<u32>`
+              found type `{integer}`
+note: function defined here
+  --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Registry\mod.rs:84:15
+   |
+84 | pub unsafe fn RegCreateKeyExW<P1, P3>(hkey: HKEY, lpsubkey: P1, reserved: Option<u32>, lpclass: P3, dwoptions: REG_OPEN_CREATE_OPTIONS, s...
+   |               ^^^^^^^^^^^^^^^
+help: try wrapping the expression in `Some`
+   |
+86 |                 Some(0),
+   |                 +++++ +
+
+error[E0308]: mismatched types
+   --> src\registry.rs:110:17
+    |
+107 |             let _ = RegSetValueExW(
+    |                     -------------- arguments to this function are incorrect
+...
+110 |                 0,
+    |                 ^ expected `Option<u32>`, found integer
+    |
+    = note: expected enum `Option<u32>`
+               found type `{integer}`
+note: function defined here
+   --> C:\Users\fish119\.cargo\registry\src\index.crates.io-1949cf8c6b5b557f\windows-0.61.3\src\Windows\Win32\System\Registry\mod.rs:626:15
+    |
+626 | pub unsafe fn RegSetValueExW<P1>(hkey: HKEY, lpvaluename: P1, reserved: Option<u32>, dwtype: REG_VALUE_TYPE, lpdata: Option<&[u8]>) -> su...
+    |               ^^^^^^^^^^^^^^
+help: try wrapping the expression in `Some`
+    |
+110 |                 Some(0),
+    |                 +++++ +
+
+Some errors have detailed explanations: E0308, E0432.
+For more information about an error, try `rustc --explain E0308`.
+warning: `rename` (bin "rename") generated 3 warnings
+error: could not compile `rename` (bin "rename") due to 8 previous errors; 3 warnings emitted
